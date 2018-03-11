@@ -6,12 +6,7 @@ function onReady() {
   const addToDoForm = document.getElementById('addToDoForm');
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
-  //checkpoint added delete
-  const delete = document.getElementById('delete');
   addToDoForm.addEventListener('submit', () =>{
-  event.preventDefault();
-  //checkpoint added delete event listener
-  delete.addEventListener('submit', () => {
   event.preventDefault();
 
   // get the text
@@ -38,11 +33,12 @@ toDoList.appendChild(newLi);
 //empty the input
 newToDoText.value = '';
 
-//??checkpoint remove the value
-
-
-// ??checkpoint unattach the checkbox to the li
-
-}}}
-);
 }
+);}
+
+function onReady() {
+const remove = document.getElementById('remove');
+remove.addEventListener('click', () => {
+event.preventDefault();
+}
+);}
