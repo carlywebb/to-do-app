@@ -34,11 +34,5 @@ toDoList.appendChild(newLi);
 newToDoText.value = '';
 
 }
-);}
-
-function onReady() {
-const remove = document.getElementById('remove');
-remove.addEventListener('click', () => {
-event.preventDefault();
+);
 }
-);}
