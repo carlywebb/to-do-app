@@ -33,6 +33,11 @@ toDoList.appendChild(newLi);
 //empty the input
 newToDoText.value = '';
 
+//checkpoint assignment additions:
+const remove = document.getElementById('remove');
+removeToDoForm.addEventListener('submit', () => {
+event.preventDefault();
+
 }
 );
 }
