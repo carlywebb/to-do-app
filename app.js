@@ -1,5 +1,9 @@
 
 function onReady() {
+
+  // create a id variable and set it to 0
+  let id = [];
+
    const toDos = [];
    const addToDoForm = document.getElementById('addToDoForm');
 
@@ -9,11 +13,19 @@ function createNewToDo() {
    toDos.push({
      title: newToDoText.value,
      complete: false
+     // add third property "id" which will store value of id variable
+     id: number.value,
+     //  increment the "id" variable??
+
    });
 
   newToDoText.value = '';
 
   renderTheUI();
+  // create delete button, append it to "newLi" and register event listener
+
+  // when delete is clicked, remove the to-do from the ToDos array using the .filter() array method
+  //comparing todo.id with the id of each item in the to-do list.
 }
   addToDoForm.addEventListener('submit', event => {
   event.preventDefault();
