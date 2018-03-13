@@ -2,7 +2,7 @@
 function onReady() {
 
   // create a id variable and set it to 0
-  let id = [];
+  let id = 0;
 
    const toDos = [];
    const addToDoForm = document.getElementById('addToDoForm');
@@ -12,11 +12,11 @@ function createNewToDo() {
    if (!newToDoText.value) { return; }
    toDos.push({
      title: newToDoText.value,
-     complete: false
+     complete: false,
      // add third property "id" which will store value of id variable
-     id: number.value,
+     id: id,
      //  increment the "id" variable??
-
+     id = id+1;
    });
 
   newToDoText.value = '';
