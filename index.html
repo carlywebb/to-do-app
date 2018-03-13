@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!---MDL Stylesheets--->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.teal-amber.min.css">
+    <!---end MDL Stylesheets--->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../app.css">
     <title>To-Do App</title>
   </head>
   <body>
-    <h1>To-Do App</h1>
-  <form id="addToDoForm">
+    <!---MDL-->
+  <h1 class="mdl-typography--display-2">To-Do App</h1>
+  <p class="mdl-typography--display-1">
+  Get Shit Done!
+</p>
+
+<!---MDL--->
+   <div class="mdl-layout mdl-js-layout">
+    <div class="mdl-layout__header-row">
+    </div>
+    </header>
+  </div>
+
+  <form id="addToDoForm" class="mdl-typography--display-1">
   <label for="newToDoText">New To-Do:</label>
   <input type="text" id="newToDoText">
-  <button type="submit">Add To-Do!</button>
-  </form>
+
+  <button type="submit" button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Add To-Do!</button>
+</form>
 <ul id="toDoList">
 <ul id="minusBtn">
 </ul>
  <script src="app.js"></script>
+ <!---MDL JS--->
+ <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
   </body>
 </html>
