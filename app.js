@@ -1,6 +1,3 @@
-window.onload = function() {
-   onReady();
-};
 
 function onReady() {
   const addToDoForm = document.getElementById('addToDoForm');
@@ -27,17 +24,24 @@ newLi.textContent = title;
 // attach the checkbox to the li
 newLi.appendChild(checkbox);
 
+// attach the checkbox to the li
+newLi.appendChild(minusBtn);
+
 // attach the li to the ul
 toDoList.appendChild(newLi);
 
 //empty the input
 newToDoText.value = '';
 
-//checkpoint assignment additions:
-const remove = document.getElementById('remove');
-removeToDoForm.addEventListener('submit', () => {
-event.preventDefault();
+// listening for minusBtn to be clicked and removing the item
+minusBtn.addEventListener('click', function() {
+  newLi.parentNode.removeChild(newLi);
+})
 
-}
-);
-}
+console.log(title);
+});
+};
+
+window.onload = function() {
+   onReady();
+};
